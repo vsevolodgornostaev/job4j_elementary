@@ -11,8 +11,4 @@ public class Factorial {
         }
         return result;
     }
-
-    public static void main(String[] args) {
-        System.out.print(calc(1));
-    }
 }
