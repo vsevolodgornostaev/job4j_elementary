@@ -17,7 +17,7 @@ public class SwitchArrayTest {
     }
 
     @Test
-    public void swap3To4() {
+    public void swapElementsAtMiddle() {
         int[] input = {1, 2, 3, 5, 4, 6, 7, 8, 9};
         int source = input.length / 2;
         int dest = input.length / 2 - 1;
