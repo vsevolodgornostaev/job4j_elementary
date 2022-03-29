@@ -17,10 +17,10 @@ public class SwitchArrayTest {
     }
 
     @Test
-    public void swapElementsAtMiddle() {
+    public void swap5To4() {
         int[] input = {1, 2, 3, 5, 4, 6, 7, 8, 9};
-        int source = input.length / 2;
-        int dest = input.length / 2 - 1;
+        int source = 3;
+        int dest = 4;
         int[] result = SwitchArray.swap(input, source, dest);
         int[] expected = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         Assert.assertArrayEquals(expected, result);
