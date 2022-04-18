@@ -8,67 +8,55 @@ public class PointTest {
 
     @Test
     public void when00to33Then4DOT24() {
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 3;
-        int y2 = 3;
+        Point a = new Point(0, 0);
+        Point b = new Point(3, 3);
+        double out = a.distance(b);
         double expected = 4.24;
-        double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when22to99Then9DOT89() {
-        int x1 = 2;
-        int y1 = 2;
-        int x2 = 9;
-        int y2 = 9;
+        Point a = new Point(2, 2);
+        Point b = new Point(9, 9);
+        double out = a.distance(b);
         double expected = 9.89;
-        double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when2222to7889Then87DOT32() {
-        int x1 = 22;
-        int y1 = 22;
-        int x2 = 78;
-        int y2 = 89;
+        Point a = new Point(22, 22);
+        Point b = new Point(78, 89);
+        double out = a.distance(b);
         double expected = 87.32;
-        double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when55to1111Then8DOT48() {
-        int x1 = 5;
-        int y1 = 5;
-        int x2 = 11;
-        int y2 = 11;
+        Point a = new Point(5, 5);
+        Point b = new Point(11, 11);
+        double out = a.distance(b);
         double expected = 8.48;
-        double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when015to2237Then31DOT11() {
-        int x1 = 0;
-        int y1 = 15;
-        int x2 = 22;
-        int y2 = 37;
+        Point a = new Point(0, 15);
+        Point b = new Point(22, 37);
+        double out = a.distance(b);
         double expected = 31.11;
-        double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
     public void when0100to2005688then5591DOT57() {
-        int x1 = 0;
-        int y1 = 100;
-        int x2 = 200;
-        int y2 = 5688;
+        Point a = new Point(0, 100);
+        Point b = new Point(200, 5688);
+        double out = a.distance(b);
         double expected = 5591.57;
-        double out = Point.distance(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
