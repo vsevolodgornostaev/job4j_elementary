@@ -15,7 +15,8 @@ public class Max {
     public static int max(int first, int second, int third, int four) {
         return max(first,
                 max(second,
-                        max(third, four))
+                        max(third, four)
+                )
         );
     }
 
